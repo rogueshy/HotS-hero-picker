@@ -10,7 +10,7 @@ body {
 	text-align: center;
 }
 
-/* === бепумхи акнй === */
+/* === UPPER (meta) SELECTORS === */
 .main .upper .hidden {
 	display: none;
 }
@@ -40,9 +40,7 @@ body {
 	display: inline-block;
 }
 
-/* === йнмеж бепумецн акнйю === */
-
-/* === акнй я цепнълх === */
+/* === HERO SELECTORS === */
 .main .heroColumn {
 	margin: auto;
 	display: inline-block;
@@ -92,4 +90,3 @@ input:checked + label > img.columnCross{
 	left: 0; 
 	top: 0
 }
-/* === йнмеж акнйю я цепнълх === */
