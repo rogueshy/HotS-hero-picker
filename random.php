@@ -8,7 +8,7 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<link rel="stylesheet" href="../heroes/styleFor7.css">
 	<script src="/heroes/jquery-1.11.3.min.js"></script>
-	<script src="/heroes/toggleCbs.js"></script>
+	<script src="/heroes/toggleCbjq.js"></script>
 </head>
 <body>
 <div class="main">
