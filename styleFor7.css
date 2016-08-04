@@ -1,0 +1,95 @@
+body {
+	font-family: Helvetica,Arial,Sans-Serif;
+}
+.main {
+	height: auto;
+	align-items: center;
+	margin: 0 auto;
+	horizontal-align: center;
+	max-width: 1000px;
+	text-align: center;
+}
+
+/* === бепумхи акнй === */
+.main .upper .hidden {
+	display: none;
+}
+.main .upper img {
+	border: 1px solid white;
+	border-radius: 3px;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.main .upper input:checked + label > img{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.main .upper .columnRole {
+	min-width: 325px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.main .upper .columnUniverse {
+	min-width: 410px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+/* === йнмеж бепумецн акнйю === */
+
+/* === акнй я цепнълх === */
+.main .heroColumn {
+	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 650px;
+}
+.main .heroColumn img {
+	border: 1px solid white;
+	border-radius: 5px;
+	text-align: center;
+	max-width: 50px;
+	height: 50px;
+}
+
+input:checked + label > img.crossIcon {
+	opacity: 0;
+}
+input:checked + label > img.columnCross{
+	opacity: 0;
+}
+
+.heroIcon {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.crossIcon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.columnIcon {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.columnCross {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.heroClass {
+	display: inline-block;
+	position: relative; 
+	left: 0; 
+	top: 0
+}
+/* === йнмеж акнйю я цепнълх === */
