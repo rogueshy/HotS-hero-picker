@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	var uWc,uSc,uDi,uCl,uOv = $();
 	var rSin,rSup,rSpec,rWar = $();
-	// ğîëè
+	// roles select logic
 	$(".columnRole input:checkbox").change(function () {
 		var className = $(this).val();
 		if (this.checked == true) {
@@ -63,10 +63,7 @@ $(document).ready(function () {
 		}
 	});
 	
-	// ÆÀĞÅÍÎÅ Î×ÊÎ ÌÀÊÀÊÈ À ÍÅ ÊÎÄ
-	
-	
-	// âñåëåííûå
+	// universe selector logic
 	$(".columnUniverse input:checkbox").change(function () {
 		var uniName = $(this).val();
 		if (this.checked == true) {
