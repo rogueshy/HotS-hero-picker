@@ -38,27 +38,7 @@ $(document).ready(function () {
 				else if (className == "Specialist") { rSpec = 0; }
 				else { rWar = 0; }
 				$('.' + className).each(function () {
-					if (uWc == 1) {
 					$(this).prop('checked', false);
-					$('.Warcraft').prop('checked', true);
-					}
-					else if (uSc == 1) {
-					$(this).prop('checked', false);
-					$('.Starcraft').prop('checked', true);
-					}
-					else if (uDi == 1) {
-					$(this).prop('checked', false);
-					$('.Diablo').prop('checked', true);
-					}
-					else if (uCl == 1) {
-					$(this).prop('checked', false);
-					$('.Classic').prop('checked', true);
-					}
-					else if (uOv == 1) {
-					$(this).prop('checked', false);
-					$('.Overwatch').prop('checked', true);
-					}
-					else { $(this).prop('checked', false); }
 				});
 		}
 	});
@@ -73,19 +53,19 @@ $(document).ready(function () {
 			else if (uniName == "Classic") { uCl = 1; }
 			else { uOv = 1; }
 			$('.' + uniName).each(function() {
-				if (rSin = 0) {
+				if (rSin == 0) {
 					$(this).prop('checked', true);
 					$('.Assassin').prop('checked', false);
 				}
-				else if (rSup = 0) {
+				else if (rSup == 0) {
 					$(this).prop('checked', true);
 					$('.Support').prop('checked', false);
 				}
-				else if (rSpec = 0) {
+				else if (rSpec == 0) {
 					$(this).prop('checked', true);
 					$('.Specialist').prop('checked', false);
 				}
-				else if (rWar = 0) {
+				else if (rWar == 0) {
 					$(this).prop('checked', true);
 					$('.Warrior').prop('checked', false);
 				}
@@ -98,23 +78,7 @@ $(document).ready(function () {
 				else if (uniName == "Classic") { uCl = 0; }
 				else { uOv = 0; }
 			$('.' + uniName).each(function () {
-				if (rSin = 1) {
-					$(this).prop('checked', false);
-					$('.Assassin').prop('checked', true);
-				}
-				else if (rSup = 1) {
-					$(this).prop('checked', false);
-					$('.Support').prop('checked', true);
-				}
-				else if (rSpec = 1) {
-					$(this).prop('checked', false);
-					$('.Specialist').prop('checked', true);
-				}
-				else if (rWar = 1) {
-					$(this).prop('checked', false);
-					$('.Warrior').prop('checked', true);
-				}
-				else { $(this).prop('checked', false); }
+				$(this).prop('checked', false);
 				});
 		}
 	});

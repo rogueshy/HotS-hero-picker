@@ -90,3 +90,21 @@ input:checked + label > img.columnCross{
 	left: 0; 
 	top: 0
 }
+/* === submit and result styles === */
+.submitBtn {
+	width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.result	{
+	margin: auto;
+	margin-bottom: 10px;
+	max-width: 400px;
+	height: 310px;
+	text-align: center;
+}
+.result img {
+	margin-top: 5px;
+	width: 60px;
+	height: 60px;
+}
