@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../heroes/styleFor7.css">
 	<script src="/heroes/jquery-1.11.3.min.js"></script>
 	<script src="/heroes/toggleCbs.js"></script>
+	<script src="/heroes/keep_cb.js"></script>
 </head>
 <body>
 <div class="main">
@@ -50,8 +51,26 @@
 									<img class=\"crossIcon\" src=icons/red_cross.png title=\"" . $row['Name'] . "\" />
 								</label></div>"; }
 		?>
-		</form>
+		<input class="submitBtn" type="submit" name="submit" value="Select random Hero"> </form>
 	</div>
+	<div class="result">
+	<?php 
+		if(isset($_POST['submit'])) {
+			if(isset($_POST['hero'])) {
+				$hero = $_POST['hero'];
+				$hero_sq = implode(", ", $hero);
+				$sql = "SELECT * FROM Heroes Where Id IN (" . $hero_sq . ") ORDER BY RAND() LIMIT 1";
+				$result = mysqli_query($conn,$sql) or die("MySQL error: " . mysqli_error($conn) . "<hr>\nQuery: $sql"); 
+				while($row = mysqli_fetch_array($result)) {
+						echo "<img src='icons/".$row['Icon']."'><br>". $row['Name'] . "<br>" . $row['Title'];
+						}
+				}
+			else {
+				echo "No hero selected!";
+		} }
+		
+	?>
+</div>
 </div>
 </body>
 </html>

@@ -10,7 +10,7 @@ body {
 	text-align: center;
 }
 
-/* === UPPER (meta) SELECTORS === */
+/* === бепумхи акнй === */
 .main .upper .hidden {
 	display: none;
 }
@@ -40,7 +40,9 @@ body {
 	display: inline-block;
 }
 
-/* === HERO SELECTORS === */
+/* === йнмеж бепумецн акнйю === */
+
+/* === акнй я цепнълх === */
 .main .heroColumn {
 	margin: auto;
 	display: inline-block;
@@ -89,4 +91,22 @@ input:checked + label > img.columnCross{
 	position: relative; 
 	left: 0; 
 	top: 0
+}
+/* === йнмеж акнйю я цепнълх === */
+.submitBtn {
+	width: 400px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+.result	{
+	margin: auto;
+	margin-bottom: 10px;
+	max-width: 400px;
+	height: 310px;
+	text-align: center;
+}
+.result img {
+	margin-top: 5px;
+	width: 60px;
+	height: 60px;
 }
