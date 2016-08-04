@@ -32,7 +32,7 @@ jQuery(function($) {
     // a key must is used for the cookie/storage
     var storedData = getStorage('ru_rogueshy_checkboxes_'); 
     
-    $('input:checkbox').bind('change',function(){
+    $('.herocolumn input:checkbox').bind('change',function(){
         $('#'+this.id+'txt').toggle($(this).is(':checked'));
         // save the data on change
         storedData.set(this.id, $(this).is(':checked')?'checked':'not');
