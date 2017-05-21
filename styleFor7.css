@@ -91,7 +91,7 @@ input:checked + label > img.columnCross{
 	top: 0
 }
 /* === submit and result styles === */
-.submitBtn {
+#submitBtn {
 	width: 400px;
 	height: 50px;
 	margin-bottom: 20px;
